@@ -12,8 +12,10 @@ nav {
     box-shadow: 0 0 20px #2c6a4b;
 }
 .logo img {
-    max-width: 100px;
+    max-width: 75px;
     mix-blend-mode: multiply;
+    scale: 1.6;
+    padding-top: 10px;
 }
 .dropdown {
     position: relative;
@@ -48,6 +50,51 @@ nav {
 .cnt {
     padding-left: 10px;
 }
+.container {
+    margin: 20px 0px;
+    width: 100vw;
+    height: 500px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.img {
+    height: 500px;
+    width: 400px;
+}
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.details {
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+    justify-content: start;
+    flex-direction: column;
+}
+.details .name {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    font-style: normal;
+    margin: 10px 0px;
+
+}
+.details .Designer {
+    display: inline;
+    font-family: "Poppins", sans-serif;
+    font-weight: 150;
+    width: max-content;
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: 80px;
+}
 @media (max-width: 480px) {
     .logo img {
         max-width: 50px;
@@ -55,5 +102,13 @@ nav {
     }
     nav {
         padding-top: 20px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .img,
+    .details {
+        height: 100%;
+        width: 100%;
     }
 }
