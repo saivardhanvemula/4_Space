@@ -54,7 +54,6 @@ nav {
     margin: 20px 0px;
     width: 100vw;
     height: 500px;
-    /* background-color: blue; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,8 +61,11 @@ nav {
     flex-shrink: 1;
 }
 .img {
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
+    border-radius: 10%;
+    box-shadow: inset 0 0 10px black;
+    background-color: #6CBC98;
 }
 .img img {
     height: 100%;
@@ -71,11 +73,9 @@ nav {
     object-fit: contain;
 }
 .details {
-    display: inline-block;
+    margin-right: 50px;
     height: 300px;
     width: 500px;
-    justify-content: start;
-    flex-direction: column;
 }
 .details .name {
     font-family: "Libre Baskerville", serif;
